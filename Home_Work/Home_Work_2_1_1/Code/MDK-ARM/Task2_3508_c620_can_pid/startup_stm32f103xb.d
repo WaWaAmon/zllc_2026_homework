@@ -1,0 +1,1 @@
+task2_3508_c620_can_pid\startup_stm32f103xb.o: startup_stm32f103xb.s
