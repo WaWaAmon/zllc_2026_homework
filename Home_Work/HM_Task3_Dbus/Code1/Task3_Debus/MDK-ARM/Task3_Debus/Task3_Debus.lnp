@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"task3_debus\startup_stm32f407xx.o"
+"task3_debus\main.o"
+"task3_debus\gpio.o"
+"task3_debus\dma.o"
+"task3_debus\usart.o"
+"task3_debus\stm32f4xx_it.o"
+"task3_debus\stm32f4xx_hal_msp.o"
+"task3_debus\dbus.o"
+"task3_debus\stm32f4xx_hal_uart.o"
+"task3_debus\stm32f4xx_hal_rcc.o"
+"task3_debus\stm32f4xx_hal_rcc_ex.o"
+"task3_debus\stm32f4xx_hal_flash.o"
+"task3_debus\stm32f4xx_hal_flash_ex.o"
+"task3_debus\stm32f4xx_hal_flash_ramfunc.o"
+"task3_debus\stm32f4xx_hal_gpio.o"
+"task3_debus\stm32f4xx_hal_dma_ex.o"
+"task3_debus\stm32f4xx_hal_dma.o"
+"task3_debus\stm32f4xx_hal_pwr.o"
+"task3_debus\stm32f4xx_hal_pwr_ex.o"
+"task3_debus\stm32f4xx_hal_cortex.o"
+"task3_debus\stm32f4xx_hal.o"
+"task3_debus\stm32f4xx_hal_exti.o"
+"task3_debus\system_stm32f4xx.o"
+--strict --scatter "Task3_Debus\Task3_Debus.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Task3_Debus.map" -o Task3_Debus\Task3_Debus.axf
